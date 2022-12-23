@@ -5,7 +5,6 @@ plugins {
     id 'maven-publish'
     alias(libs.plugins.dokka)
     alias(libs.plugins.validator)
-    id 'com.google.gms.google-services'
 }
 
 apply from: 'jacoco.gradle'
