@@ -57,10 +57,10 @@
         </activity>
         <meta-data
             android:name="com.pushpushgo.apikey"
-            android:value="Your PPG authorization Token" />
+            android:value="302b6bda-76e7-48fa-b0cd-78eaa6f10b95" />
         <meta-data
             android:name="com.pushpushgo.projectId"
-            android:value="Your PPG project ID" />
+            android:value="639c65b4f20b284ddb715b1d" />
     </application>
 
 </manifest>

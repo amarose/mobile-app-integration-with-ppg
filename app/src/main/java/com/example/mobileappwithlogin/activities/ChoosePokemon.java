@@ -154,7 +154,7 @@ public class ChoosePokemon extends AppCompatActivity implements View.OnClickList
                 @Override
                 public Map<String, String> getHeaders() {
                 Map<String, String>  params = new HashMap<>();
-                params.put("X-Token", "Your PPG authorization Token");
+                params.put("X-Token", "302b6bda-76e7-48fa-b0cd-78eaa6f10b95");
                 return params;
             }
             };
