@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ChoosePokemon">
+
+    <ImageView
+        android:id="@+id/pokemonImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:maxHeight="250dp"
+        android:contentDescription="Pokemon img"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:id="@+id/pokemonNameHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Pokemon is:"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/pokemonImage"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/pokemonNameDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/pokemonNameHeader"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/pokemonTypeHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Type:"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/pokemonNameDisplay"
+        app:layout_constraintRight_toLeftOf="@+id/pokemonNameHeader"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/pokemonTypeDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/pokemonTypeHeader"
+        app:layout_constraintLeft_toLeftOf="@+id/pokemonTypeHeader"
+        app:layout_constraintRight_toRightOf="@+id/pokemonTypeHeader"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/pokemonAbilityHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ability:"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/pokemonNameDisplay"
+        app:layout_constraintLeft_toRightOf="@+id/pokemonNameHeader"
+        android:layout_marginEnd="100dp"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/pokemonAbilityDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/pokemonAbilityHeader"
+        app:layout_constraintLeft_toLeftOf="@+id/pokemonAbilityHeader"
+        app:layout_constraintRight_toRightOf="@+id/pokemonAbilityHeader"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/pickPokemonButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose my pokemon"
+        android:textStyle="bold"
+        android:backgroundTint="@color/purple_500"
+        android:textColor="#ffff"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pokemonImage"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <Button
+        android:id="@+id/backToProfileButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back to profile info"
+        android:textStyle="bold"
+        android:backgroundTint="@color/purple_500"
+        android:textColor="#ffff"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pickPokemonButton"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:elevation="7dp"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

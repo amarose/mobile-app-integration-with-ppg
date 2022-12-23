@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "511453540751",
+    "firebase_url": "https://mobile-test-app-with-login-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "mobile-test-app-with-login",
+    "storage_bucket": "mobile-test-app-with-login.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:511453540751:android:e08b6da175892b08095bfa",
+        "android_client_info": {
+          "package_name": "com.example.mobileappwithlogin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "511453540751-v102ugr17mu69m2mgmoopokn0ns401en.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbYPI7keLoAdePLE4JEn9AGXm_tNpd18s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "511453540751-v102ugr17mu69m2mgmoopokn0ns401en.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
