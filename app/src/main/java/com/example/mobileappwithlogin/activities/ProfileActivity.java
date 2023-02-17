@@ -31,9 +31,9 @@ public class ProfileActivity extends AppCompatActivity {
         setContentView(R.layout.activity_profile);
 
         // Firebase signOut functionality on Logout button
-        @SuppressLint({"MissingInflatedId", "LocalSuppress"}) Button logout = findViewById(R.id.logoutButton);
+        Button logout = findViewById(R.id.logoutButton);
         logout.setOnClickListener(view -> {
-            FirebaseAuth.getInstance().signOut();
+//            FirebaseAuth.getInstance().signOut();
             startActivity(new Intent(ProfileActivity.this, MainActivity.class));
         });
 
