@@ -56,4 +56,3 @@ rootProject.name = "mobileAppWithLogin"
 include ':app'
 include ':libs:library-no-op'
 include ':libs:library'
-include ':library'
